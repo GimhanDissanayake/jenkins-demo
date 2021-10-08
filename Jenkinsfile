@@ -15,7 +15,7 @@ pipeline {
         stage('test') {
             steps {
                 echo 'testing...'
-                cat readme.txt
+                sh 'cat readme.txt'
             }
         }
         stage('deploy') {
